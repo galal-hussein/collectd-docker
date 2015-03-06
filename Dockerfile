@@ -22,7 +22,6 @@ RUN cd /tmp/ && tar -xvf collectd-5.4.2.tar.gz
 RUN mkdir -p /var/www/
 RUN cp -r /tmp/collectd-5.4.2/contrib/collection3 /var/www/graphs
 RUN mkdir -p /usr/lib/cgi-bin
-RUN cp /tmp/collectd-5.4.2/contrib/collection.cgi /usr/lib/cgi-bin/
 RUN chown -R www-data:www-data /var/www/graphs
 WORKDIR /tmp/collectd-5.4.2
 
